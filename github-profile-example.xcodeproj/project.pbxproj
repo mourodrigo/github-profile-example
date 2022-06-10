@@ -16,6 +16,8 @@
 		30ED954F2853B2BE00781FCC /* github_profile_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED954E2853B2BE00781FCC /* github_profile_exampleTests.swift */; };
 		30ED95592853B2BE00781FCC /* github_profile_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED95582853B2BE00781FCC /* github_profile_exampleUITests.swift */; };
 		30ED955B2853B2BE00781FCC /* github_profile_exampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED955A2853B2BE00781FCC /* github_profile_exampleUITestsLaunchTests.swift */; };
+		30ED95692853B2E500781FCC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED95682853B2E500781FCC /* Profile.swift */; };
+		30ED956C2853B61300781FCC /* ProfileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED956B2853B61300781FCC /* ProfileProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		30ED95542853B2BE00781FCC /* github-profile-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "github-profile-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30ED95582853B2BE00781FCC /* github_profile_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = github_profile_exampleUITests.swift; sourceTree = "<group>"; };
 		30ED955A2853B2BE00781FCC /* github_profile_exampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = github_profile_exampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30ED95682853B2E500781FCC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		30ED956B2853B61300781FCC /* ProfileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		30ED95362853B2BA00781FCC /* github-profile-example */ = {
 			isa = PBXGroup;
 			children = (
+				30ED956A2853B5F900781FCC /* Service */,
 				30ED95372853B2BA00781FCC /* AppDelegate.swift */,
 				30ED95392853B2BA00781FCC /* SceneDelegate.swift */,
 				30ED953B2853B2BA00781FCC /* ViewController.swift */,
+				30ED95672853B2D400781FCC /* Model */,
 				30ED953D2853B2BA00781FCC /* Main.storyboard */,
 				30ED95402853B2BE00781FCC /* Assets.xcassets */,
 				30ED95422853B2BE00781FCC /* LaunchScreen.storyboard */,
@@ -125,6 +131,22 @@
 				30ED955A2853B2BE00781FCC /* github_profile_exampleUITestsLaunchTests.swift */,
 			);
 			path = "github-profile-exampleUITests";
+			sourceTree = "<group>";
+		};
+		30ED95672853B2D400781FCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30ED95682853B2E500781FCC /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30ED956A2853B5F900781FCC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				30ED956B2853B61300781FCC /* ProfileProvider.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30ED953C2853B2BA00781FCC /* ViewController.swift in Sources */,
+				30ED95692853B2E500781FCC /* Profile.swift in Sources */,
 				30ED95382853B2BA00781FCC /* AppDelegate.swift in Sources */,
 				30ED953A2853B2BA00781FCC /* SceneDelegate.swift in Sources */,
+				30ED956C2853B61300781FCC /* ProfileProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
